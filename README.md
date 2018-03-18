@@ -14,7 +14,7 @@ They main class/entry point of the application is __org.dmonix.area51.Main__.
 
 You can pretty much turn any Java/Scala app to a Docker by minor modifications to your project.
 
-First add the __sbt-native-packager__ plugin to the plugins.sbt file.
+First add the [sbt-native-packager](https://www.scala-sbt.org/sbt-native-packager/) plugin to the plugins.sbt file.
 ```scala
 addSbtPlugin("com.typesafe.sbt" % "sbt-native-packager" % "1.0.0")
 ```
