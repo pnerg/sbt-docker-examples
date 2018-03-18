@@ -7,7 +7,7 @@ This project is pretty much an archive of examples, mostly for my own use but ho
 
 ## Plain Java/Scala as Docker
 The simplest form of dockerization is to take a Java/Scala app, stuff it into a Docker with all its depdendencies as well as creating a start/stop script invoked when the Docker container starts/stops.  
-The subt-module [app-example](app_example) contains a simple web-app written in Scala and based on [Scalatra](
+The subt-module [app-example](app-example) contains a simple web-app written in Scala and based on [Scalatra](
 http://scalatra.org/).  
 
 They main class/entry point of the application is __org.dmonix.area51.Main__.  
@@ -41,7 +41,7 @@ Now start a container:
 ```bash
 docker run --rm -p 8080:8080 app-example:6.6.6
 ```
-Point your browser to [localhost:8080] and you should see a web-page with a message.
+Point your browser to [localhost:8080](localhost:8080) and you should see a web-page with a message.
 
 Now turn your attention to the __target__ directory in your project.  
 You'll find a __docker__ directory. It contains all libraries/dependencies as well as auto-generated start/stop scripts.  
